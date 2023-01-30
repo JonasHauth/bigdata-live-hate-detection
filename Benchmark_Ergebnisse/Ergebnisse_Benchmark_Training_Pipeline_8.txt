@@ -1,0 +1,17 @@
+(base) C:\Users\jdhau\Documents\GitHub\bigdata-live-hate-detection>C:/Users/jdhau/anaconda3/python.exe c:/Users/jdhau/Documents/GitHub/bigdata-live-hate-detection/Bechmark_Training_Pipeline.py
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Apache Spark version:  3.3.1
+Pipeline small: 119747
+Pipeline medium: 600343
+Pipeline complete: 1198584
+Test environment prepared.
+Time training pipeline small ...
+[2.8316111, 2.483050600000002, 2.3703484999999986, 2.2639996000000018, 2.1577997999999994]
+Time Json small: 2.4213619200000003 s, standard deviation 0.23192246239016526
+Time training pipeline medium ...
+[5.781638600000001, 6.1183929000000035, 5.958659999999995, 5.825113199999997, 5.612657499999997]
+Time Json medium: 5.859292439999999 s, standard deviation 0.17031388275480897
+Time training pipeline complete ...
+[11.376809099999996, 10.785464399999995, 11.401008500000003, 10.738216100000002, 11.941260499999999]
+Time Json complete: 11.248551719999998 s, standard deviation 0.44596654362565985

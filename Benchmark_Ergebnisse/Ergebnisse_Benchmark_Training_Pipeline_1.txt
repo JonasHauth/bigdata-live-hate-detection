@@ -1,0 +1,20 @@
+(base) C:\Users\jdhau\Documents\GitHub\bigdata-live-hate-detection>C:/Users/jdhau/anaconda3/python.exe c:/Users/jdhau/Documents/GitHub/bigdata-live-hate-detection/Bechmark_Training_Pipeline.py
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Apache Spark version:  3.3.1
+Pipeline small: 119338
+Pipeline medium: 598895
+Pipeline complete: 1198584
+Test environment prepared.
+Time training pipeline small ...
+[5.424942600000001, 5.069189999999999, 4.9567209000000005, 4.922321499999995, 4.827424800000003]
+Time Json small: 5.04011996 s, standard deviation 0.2073666525538052
+Time training pipeline medium ...
+[17.917431800000003, 17.046009200000007, 16.792402100000004, 17.8419066, 17.184788199999986]
+Time Json medium: 17.35650758 s, standard deviation 0.4459506634630805
+Time training pipeline complete ...
+[31.901922500000012, 31.172811199999984, 33.24674820000001, 31.686612200000013, 31.24274700000001]
+Time Json complete: 31.850168220000008 s, standard deviation 0.7493514247351469
+ERFOLGREICH: Der Prozess mit PID 14516 (untergeordnetem Prozess von PID 15772) wurde beendet.
+ERFOLGREICH: Der Prozess mit PID 15772 (untergeordnetem Prozess von PID 11076) wurde beendet.
+ERFOLGREICH: Der Prozess mit PID 11076 (untergeordnetem Prozess von PID 9328) wurde beendet.

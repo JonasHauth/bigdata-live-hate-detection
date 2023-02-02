@@ -76,6 +76,7 @@ if __name__ == "__main__":
     # For Testing
     batchHateInference = final_df.writeStream \
         .format("console") \
+        .trigger(processingTime='2 seconds') \
         .start()
 
     # Output to Kafka
@@ -85,7 +86,6 @@ if __name__ == "__main__":
     #     .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS_CONS) \
     #     .option("topic", "topic1") \
     #     .option("checkpointLocation", "/data/checkpoints") \
-    #     .trigger(continuous="1 second") \
     #     .start()
 
     #.trigger(processingTime='2 seconds') \

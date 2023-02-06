@@ -5,6 +5,7 @@ from json import dumps
 import pickle
 import random
 
+# Install needed Python Libraries:
 # pip install kafka-python
 
 KAFKA_TOPIC_NAME_CONS = "test-topic"
@@ -13,10 +14,11 @@ KAFKA_BOOTSTRAP_SERVERS_CONS = 'localhost:29092'
 if __name__ == "__main__":
     print("Kafka Producer Application Started ... ")
 
-    # Nicht benötigt, da Prozesse mithalten können 
+    # Prozess kann bei Bedarf verlangsamt werden. War für unsere Tests nicht notwendig, da das Skript selbst genug Rechenzeit benötigt.
     # tweetsPerSecond = 1/10000
     # time.sleep(tweetsPerSecond)
 
+    # Kafka Objekt mit oben definierten Parametern erzeugen.
     kafka_producer_obj = KafkaProducer(bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS_CONS,
                                        value_serializer=lambda x: dumps(x).encode('utf-8'))
 
@@ -27,11 +29,12 @@ if __name__ == "__main__":
 
     message = None
 
+    # Um eine unbegrenzte Ausführung zu verhindern wird eine obere Anzahl der Tweets festgesetzt. 
     for i in range(400000):
         i = i + 1
         message = {}
 
-        # Debug
+        # Für Debbuging-Zwecke können die Messages ausgegeben werden. Dies ist aber nicht sinnvoll, da es die Ausführung deutlich verlangsamt.
         # print("Preparing message: " + str(i))
 
         message["tweet_datetime"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

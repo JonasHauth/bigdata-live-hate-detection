@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
 
     # Dokument mit Liste von Tweet-Texts werden zufällig ausgewählt
-    with open("C:/Users/jdhau/Documents/GitHub/bigdata-live-hate-detection/data/text_list", "rb") as fp:   # Unpickling
+    with open("C:/Users/jdhau/Documents/GitHub/bigdata-live-hate-detection/data/random_tweet_list", "rb") as fp:   # Unpickling
         text_list = pickle.load(fp)
 
     message = None
